@@ -1,0 +1,90 @@
+.footer {
+  background: linear-gradient(180deg, #85e1ff 0%, #209cd4 100%);
+
+  @include media(desktop) {
+  }
+}
+
+.footer-bg-wrapper {
+  padding-top: 36px;
+  padding-bottom: 36px;
+  max-width: 375px;
+  margin: 0 auto;
+  background-image: url(../img/footer/footer-bg-mob.png);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+
+  @include media(desktop) {
+    max-width: 1440px;
+    background-image: url(../img/footer/footer-bg-desk.png);
+  }
+}
+
+.footer-container {
+  padding: 0 12px;
+
+  @include media(desktop) {
+    padding: 0 100px;
+  }
+}
+
+.footer-content-wrapper {
+  @include media(desktop) {
+  }
+}
+
+.footer-nav {
+  margin-bottom: 22px;
+
+  @include media(desktop) {
+    margin-bottom: 50px;
+  }
+}
+
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+
+  @include media(desktop) {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 32px;
+  }
+}
+
+.footer-list-item {
+}
+
+@include media(desktop) {
+}
+
+.footer-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Kanit', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.4;
+  text-align: center;
+  color: #03396c;
+
+  @include media(desktop) {
+  }
+}
+
+.footer-text {
+  font-family: 'Kanit', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.55556;
+  text-align: center;
+  color: #03396c;
+
+  @include media(desktop) {
+    text-align: right;
+  }
+}

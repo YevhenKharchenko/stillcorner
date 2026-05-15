@@ -1,0 +1,91 @@
+.hero-section {
+  background: linear-gradient(180deg, #85e1ff 0%, #209cd4 100%);
+
+  @include media(desktop) {
+  }
+}
+
+.hero-bg-wrapper {
+  padding-top: 100px;
+  padding-bottom: 240px;
+  max-width: 375px;
+  margin: 0 auto;
+  background-image: url(../img/hero/hero-bg-mob.png);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: auto;
+
+  @include media(desktop) {
+    padding-top: 180px;
+    padding-bottom: 324px;
+    max-width: 1440px;
+    background-image: url(../img/hero/hero-bg-desk.png);
+  }
+}
+
+.hero-container {
+  @include media(desktop) {
+  }
+}
+
+.hero-content-wrapper {
+  @include media(desktop) {
+  }
+}
+
+.hero-text-wrapper {
+  @include media(desktop) {
+    max-width: 685px;
+  }
+}
+
+.hero-title {
+  font-family: 'Jomhuria', sans-serif;
+  font-weight: 400;
+  font-size: 102px;
+  line-height: 0.70588;
+  text-align: center;
+  color: #03396c;
+  margin-bottom: 12px;
+
+  @include media(desktop) {
+    font-size: 120px;
+    line-height: 1;
+  }
+}
+
+.hero-subtitle {
+  font-family: 'Kanit', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.4;
+  text-align: center;
+  color: #03396c;
+  margin-bottom: 12px;
+
+  @include media(desktop) {
+    text-align: left;
+  }
+}
+
+.hero-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  @include media(desktop) {
+  }
+}
+
+.hero-text {
+  font-family: 'Kanit', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.4;
+  text-align: center;
+  color: #03396c;
+
+  @include media(desktop) {
+    text-align: left;
+  }
+}

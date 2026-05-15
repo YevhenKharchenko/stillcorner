@@ -1,0 +1,93 @@
+.progress-section {
+  @include media(desktop) {
+  }
+}
+
+.progress-section-wrapper {
+  padding-top: 40px;
+  padding-bottom: 300px;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(../img/progress/progress-bg-mob.png);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: auto;
+
+  @include media(desktop) {
+    padding-top: 100px;
+    padding-bottom: 388px;
+    max-width: 1440px;
+    background-image: url(../img/progress/progress-bg-desk.png);
+  }
+}
+
+.progress-container {
+  @include media(desktop) {
+  }
+}
+
+.progress-title {
+  @include media(desktop) {
+    text-align: center;
+  }
+}
+
+.progress-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 22px;
+
+  @include media(desktop) {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+.progress-list-item {
+  background: #fff;
+  border-radius: 22px;
+  padding: 12px;
+  width: 100%;
+  max-width: 343px;
+
+  @include media(desktop) {
+    max-width: 400px;
+  }
+}
+
+.progress-item-title {
+  font-family: 'Kanit', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.4;
+  text-align: center;
+  color: #03396c;
+  margin-bottom: 12px;
+
+  @include media(desktop) {
+  }
+}
+
+.progress-item-features-list {
+  @include media(desktop) {
+  }
+}
+
+.progress-features-list-item {
+  @include media(desktop) {
+  }
+}
+
+.progress-features-item-text {
+  font-family: 'Kanit', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.4;
+  text-align: center;
+  color: #03396c;
+
+  @include media(desktop) {
+  }
+}
