@@ -1,5 +1,5 @@
 .header {
-  background: #fff;
+  background: #fffad0;
   padding: 12px 0;
   position: fixed;
   width: 100%;
@@ -18,28 +18,26 @@
 
 .nav {
   display: flex;
-  justify-content: end;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
 
   @include media(desktop) {
-    justify-content: space-between;
   }
 }
 
 .header-logo-link {
-  display: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Palanquin Dark', sans-serif;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 1.06667;
+  color: #060606;
+  min-width: fit-content;
 
   @include media(desktop) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Jomhuria', sans-serif;
-    font-weight: 400;
-    font-size: 52px;
-    line-height: 1;
-    color: #03396c;
-    min-width: fit-content;
   }
 }
 
@@ -50,7 +48,7 @@
     display: flex;
     align-items: center;
     justify-content: end;
-    gap: 42px;
+    gap: 32px;
     width: 100%;
   }
 }
@@ -59,16 +57,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
 }
 
 .nav-list-link {
   @include media(desktop) {
-    font-family: 'Kanit', sans-serif;
-    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
     font-size: 16px;
-    line-height: 1.875;
-    color: #03396c;
+    line-height: 1.5;
+    text-align: center;
+    color: #060606;
     transition:
       color 0.3s ease-in-out,
       opacity 0.3s ease-in-out,

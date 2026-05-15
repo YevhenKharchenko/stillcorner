@@ -1,12 +1,12 @@
 .context-menu {
   display: none;
-  background: #def5fd;
-  padding: 74px 60px 74px;
+  background: #fffad0;
+  padding: 40px 64px 40px;
   max-width: 375px;
   width: 100%;
   margin: 0 auto;
   position: fixed;
-  top: 52px;
+  top: 48px;
   left: 0;
   right: 0;
   transform: none;
@@ -29,11 +29,12 @@
 }
 
 .context-list-link {
-  font-family: 'Kanit', sans-serif;
-  font-weight: 400;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
   font-size: 16px;
-  line-height: 1.875;
-  color: #03396c;
+  line-height: 1.5;
+  text-align: center;
+  color: #060606;
   transition:
     color 0.3s ease-in-out,
     opacity 0.3s ease-in-out,
