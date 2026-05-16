@@ -1,27 +1,21 @@
 .reviews-section {
-  background: linear-gradient(180deg, #85e1ff 0%, #209cd4 100%);
-
   @include media(desktop) {
   }
 }
 
 .reviews-bg-wrapper {
-  padding-top: 40px;
-  padding-bottom: 70px;
+  padding-top: 64px;
+  padding-bottom: 64px;
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
   overflow: hidden;
-  background-image: url(../img/reviews/reviews-bg-mob.jpg);
-  background-repeat: no-repeat;
-  background-position: bottom center;
-  background-size: cover;
 
   @include media(desktop) {
     padding-top: 100px;
     padding-bottom: 100px;
     max-width: 1440px;
-    background-image: url(../img/reviews/reviews-bg-desk.jpg);
+    position: relative;
   }
 }
 
@@ -30,13 +24,27 @@
 }
 
 .reviews-title {
+  text-align: center;
+
   @include media(desktop) {
-    text-align: center;
+  }
+}
+
+.reviews-img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 24px;
+
+  @include media(desktop) {
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    left: 9px;
   }
 }
 
 .reviews-swiper-container {
-  max-width: 343px;
+  max-width: 335px;
   margin-left: auto;
   margin-right: auto;
   overflow: hidden;
@@ -52,41 +60,58 @@
 
 .reviews-swiper-wrapper {
   @include media(desktop) {
+    display: flex !important;
+    row-gap: 28px;
+    margin-left: 582px;
   }
 }
 
 .reviews-slide {
-  background: #fff;
-  border-radius: 22px;
-  padding: 12px;
-  max-width: 343px;
-  min-height: 232px;
+  background: #fffad0;
+  border: 1px solid #fef075;
+  border-radius: 20px;
+  padding: 19px;
+  max-width: 335px;
+  display: flex !important;
+  flex-direction: column;
+  min-height: 264px;
 
   @include media(desktop) {
-    max-width: 400px;
-  }
-}
-
-.reviews-item-name {
-  font-family: 'Kanit', sans-serif;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.4;
-  color: #03396c;
-  margin-bottom: 12px;
-
-  @include media(desktop) {
+    padding: 19px 23px;
+    width: 100% !important;
+    max-width: 448px;
+    min-height: 260px;
   }
 }
 
 .reviews-item-text {
-  font-family: 'Kanit', sans-serif;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.55556;
-  color: #03396c;
+  font-family: 'Inter', sans-serif;
+  font-style: italic;
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #060606;
+  margin-bottom: 24px;
 
   @include media(desktop) {
+    font-size: 18px;
+    line-height: 1.55556;
+    margin-bottom: 40px;
+  }
+}
+
+.reviews-item-name {
+  font-family: 'Palanquin Dark', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.33333;
+  text-transform: uppercase;
+  color: #737373;
+  margin-top: auto;
+
+  @include media(desktop) {
+    font-size: 32px;
+    line-height: 1.25;
   }
 }
 
@@ -94,10 +119,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 32px;
+  gap: 25px;
   margin-top: 32px;
 
   @include media(desktop) {
+    margin-top: 0;
+    position: absolute;
+    top: 100px;
+    right: 64px;
   }
 }
 
@@ -105,7 +134,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: transform 0.3s ease-in-out;
+  border-radius: 100%;
+  background: #d9d9d9;
+  border: 1px solid #fef075;
+  min-width: 54px;
+  width: 54px;
+  height: 54px;
+  transition: all 0.3s ease-in-out;
 
   &:active {
     transform: scale(0.9);
@@ -122,7 +157,15 @@
 
   &[disabled] {
     cursor: not-allowed;
-    opacity: 0.5;
+    background: transparent;
+    border: 1px solid #5c5c5c;
+
+    .arrow-icon {
+      fill: #5c5c5c;
+
+      @include media(desktop) {
+      }
+    }
 
     &:hover {
       transform: none;
@@ -131,9 +174,9 @@
 }
 
 .arrow-icon {
+  fill: #0a000e;
+  transition: all 0.3s ease-in-out;
+
   @include media(desktop) {
-    min-width: 86px;
-    width: 86px;
-    height: 52px;
   }
 }

@@ -3,4 +3,4 @@ Disallow: /admin/
 Disallow: /private/
 Allow: /
 
-Sitemap: https://midledger.site/sitemap.xml
+Sitemap: https://stillcorner.space/sitemap.xml

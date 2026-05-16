@@ -1,5 +1,6 @@
 import Swiper from 'swiper';
 import 'swiper/css/bundle';
+import 'swiper/css/grid';
 
 const reviewsLeftArrow = document.getElementById('reviewsLeftArrow');
 const reviewsRightArrow = document.getElementById('reviewsRightArrow');
@@ -13,7 +14,7 @@ reviewsSwiper = new Swiper('.reviews-swiper-container', {
   slidesPerView: 1,
   slidesPerGroup: 1,
   initialSlide: 0,
-  spaceBetween: 12,
+  spaceBetween: 28,
   speed: 500,
   allowTouchMove: true,
   grabCursor: true,
@@ -21,8 +22,12 @@ reviewsSwiper = new Swiper('.reviews-swiper-container', {
   breakpoints: {
     1440: {
       centeredSlides: false,
-      slidesPerView: 'auto',
-      spaceBetween: 22,
+      slidesPerView: 4,
+      slidesPerGroup: 6,
+      grid: {
+        rows: 2,
+        fill: 'row',
+      },
     },
   },
 

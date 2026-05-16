@@ -1,5 +1,5 @@
 .policy-section {
-  background: #def5fd;
+  background: #fff;
 
   @include media(desktop) {
   }
@@ -11,43 +11,38 @@
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
-  background-image: url(../img/policy/policy-bg-mob.png);
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: auto;
 
   @include media(desktop) {
     padding-top: 140px;
     padding-bottom: 100px;
     max-width: 1440px;
-    background-image: url(../img/policy/policy-bg-desk.png);
-    background-position: top right;
   }
 }
 
 .policy-main-title {
-  font-family: 'Jomhuria', sans-serif;
-  font-weight: 400;
-  font-size: 52px;
-  line-height: 0.80769;
+  font-family: 'Palanquin Dark', sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.14286;
+  text-transform: uppercase;
   text-align: center;
-  color: #03396c;
-  margin-bottom: 30px;
+  color: #161616;
+  margin-bottom: 40px;
 
   @include media(desktop) {
-    text-align: left;
-    font-size: 92px;
-    line-height: 0.69565;
-    margin-bottom: 50px;
+    font-size: 32px;
+    line-height: 1.25;
+    margin-bottom: 60px;
   }
 }
 
 .policy-title {
-  font-family: 'Kanit', sans-serif;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.55556;
-  color: #03396c;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.4;
+  text-align: justify;
+  color: #161616;
   margin-bottom: 16px;
 
   @include media(desktop) {
@@ -55,11 +50,12 @@
 }
 
 .policy-text {
-  font-family: 'Kanit', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 1.55556;
-  color: #03396c;
+  font-size: 20px;
+  line-height: 1.4;
+  text-align: justify;
+  color: #161616;
 
   &:not(:last-child) {
     margin-bottom: 16px;
@@ -75,11 +71,12 @@
 }
 
 .policy-item {
-  font-family: 'Kanit', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 1.55556;
-  color: #03396c;
+  font-size: 20px;
+  line-height: 1.4;
+  text-align: justify;
+  color: #161616;
 
   &:last-child {
     margin-bottom: 16px;
